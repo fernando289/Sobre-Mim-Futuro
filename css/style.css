@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins' ;}
+html{
+    scroll-padding-top: 80px;
+    scroll-behavior: smooth;
+    font-size: 62.5%;}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transition: .7s ease;}
+body.tema{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: .7s ease;}
+header{
+    margin-top: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: rgb(39, 37, 37);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;}
+.logo{
+    position: relative;
+    font-size: 3rem;
+    color: rgb(0, 255, 8);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;}
+.logo:hover{
+    transform: scale(1.1);}
+nav{
+    align-items: center;
+    
+    display: flex;}
+nav a{
+    /*position: ;*/
+    display: inline;
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;}
+nav a:hover{
+    color: rgb(0, 255, 8) ;
+    border-bottom: 3px solid ;}
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: rgb(0, 0, 0);
+    transition: .7s ease;}
+.home .home-content h1{
+    font-size: 6rem;
+    font-weight: 700;}
+span{
+    color: rgb(0, 255, 8);}
+.home-content h3{
+    font-size: 3rem;
+    font-weight: 700;}
+.home-content p{
+    font-size: 1.6rem;}
+.home-img img{
+    position: relative;
+    width: 64vh;
+    cursor: pointer;
+    transition: 0.7s ease;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+    border: 3px solid rgb(0, 255, 8);
+    box-shadow: 0 0 50px rgb(0, 255, 8);
+    border-radius: 2rem;}
+/* achei feio e tirei
+.home-img img:hover{
+    transform: scale(1.1);}*/
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    font-size: 2rem;
+    border: 0.2rem solid rgb(0, 255, 8);
+    border-radius: 50%;
+    color: rgb(0, 255, 8);
+    margin: 3rem 1rem 3rem;
+    transition: 0.5s ease;}
+.social-icons a:hover{
+    color: black;
+    background-color: rgb(0, 255, 8);
+    transform: scale(1.3) translateY(-5px);
+    box-shadow: 0 0 25px rgb(0, 255, 8);}
+.btn{
+    position: absolute;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: transparent;
+    border-radius: 4rem;
+    border: 2px solid rgb(0, 255, 8);
+    font-size: 1.6rem;
+    color: rgb(0, 255, 8);
+    transition: 0.3s ease;}
+.btn:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 255, 8);
+    border: black;
+    transform: scale(1.3) translateY(-5px);
+    box-shadow: 0 0 25px rgb(0, 255, 8); }
+.typing-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;}
+.typing-text span{
+    position: relative;}
+.typing-text span::before{
+    content: "";
+    color: rgb(0, 255, 8);
+    animation: words 20s infinite;}
+.typing-text span:after{
+    content: " ";
+    background-color: transparent; 
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid rgb(0, 255, 8);
+    animation: cursor 1s infinite;}
+    @keyframes cursor{
+    to{border-left: 3px solid #000000}}  
+@keyframes words{
+    0%, 20%{content: "Aluno";}
+    21%, 46%{content: "Téc. em informática";}
+    58%, 78%{content: "Dedicado";}
+    80%, 100%{content: "Estudioso";}}
+.tudo{
+    margin-top: 0px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+.botao h2{
+    color: #fff;
+    transition: .7s;}
+.botao {
+    width: 60px;
+    height: 20px;
+    background-color: rgb(0, 255, 8);
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: .7s;}
+.botao .bolinha{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    transform: scale(0.8);
+    position: relative;
+    transition: .5s ease;
+    left: 0;
+    transition: 0.5s}
+.botao.tema{
+    background-color: #ffffff;}
+.botao.tema h2{
+    color: #000000;}
+.botao.tema .bolinha{
+    left: 40px;
+    background-color: #000000;}
+body.tema header{
+    background-color: #8e8e8e;
+    color: #000000;}
+body.tema header a{
+    color: #000000;}
+body.tema .home{
+    background-color: #fff;
+    color: #000000;}
+body.tema .home span{
+    color: #8e8e8e;}
+body.tema .social-icons a{
+    color: rgb(0, 0, 0);
+    border: .2rem solid black;}
+body.tema .social-icons a:hover{
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    border: .2rem solid black;
+    box-shadow: 0 0 25px #000000;}
+body.tema .btn{
+    color: #000000;
+    border: .2rem solid black;}
+body.tema .btn:hover{
+    color: #ffffff;
+    border: .2rem solid black;
+    background-color: black;
+    box-shadow: 0 0 25px black;}
+body.tema .typing-text span:before{
+    content: "";
+    color: #7a7a7a;
+    animation: words 20s infinite;}
+body.tema .typing-text span:after{
+    content: "";
+    background-color: rgb(255, 255, 255); 
+    position: relative;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid rgb(0, 0, 0);
+    animation: teste 1s infinite;}
+    @keyframes teste{
+    to{border-left: 3px solid #000000}}     
+#segunda{
+    display: none;
+    transition: all .9s ease 1s;}
+body.tema #segunda{
+    display: flex;
+    animation: fade .9s;
+    border: #000000;
+    box-shadow: 0 0 60px black;}
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }}
+body.tema #primeira{
+    animation: teste 2s;
+    display: none;}
+@keyframes teste{
+    from{ opacity: 1;}
+    to{ opacity: 0;}}
+body.tema nav a:hover{
+    color: #ffffff;
+    border-bottom: 3px solid ;}
+
+@media(max-width:995px){
+    nav {
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid rgb(0, 255, 8);
+        border-bottom: 3px solid rgb(0, 255, 8);
+        padding: 1rem;
+        background-color: rgb(0, 0, 0);
+        border-top: 0.1rem solid black;}
+    nav.active{
+        display: block;}
+    nav a{
+        display: block;
+        font-size: 2rem;}
+    nav a:hover,
+    nav.active{
+        padding: 1rem;
+        border-radius:0.5rem;
+        border-bottom:0.5rem solid;
+    }
+}
+@media (max-width: 1000px){
+    .home{
+        gap: 4rem;
+    }
+}
+@media(max-width: 995px){
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem
+    }
+    .home .home-content h3{
+        font-size: 2.5rem;
+    }
+    .home .home-content h1{
+        font-size: 4rem;
+    }
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+}
+.menu-toggle{
+    display: none;
+}
+.menu-icon{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    z-index: 101;
+}
+.menu-icon span{
+    display: block;
+}
+.menu-icon span{
+    display: block;
+    height: 4px;
+    background-color: rgb(0, 255, 8);
+    border-radius: 2px;
+}
+body.tema .menu-icon span{
+    display: block;
+    height: 4px;
+    background-color: #2e2e2e;
+    border-radius: 2px;
+}
+body.tema .menu-icon{
+    color: white;
+}
+
+@media(max-width: 995px){
+    .menu-icon{
+        display: flex;
+
+    }
+}
+@media(max-width: 995px){
+#menu-toggle:checked ~ nav{
+    display: block;
+    padding-top: 80px;}}
+
+@media(max-width:995px){
+    body.tema nav {
+        color: #7a7a7a;
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid #ffffff;
+        border-bottom: 3px solid #ffffff;
+        padding: 1rem;
+        background-color: rgb(0, 0, 0);
+        border-top: 0.1rem solid rgb(255, 255, 255);}
+    nav.active{
+        display: block;}
+    body.tema nav a{
+        color: #7a7a7a;
+        display: block;
+        font-size: 2rem;}
+    nav a:hover,
+    nav.active{
+        padding: 1rem;
+        border-radius:0.5rem;
+        border-bottom:0.5rem solid;
+    }
+}
+.blocos h3{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    border-left: 5px solid rgb(0, 255, 8);
+    padding-left: 1.5rem;
+    color: rgb(0, 255, 8);
+}
+.blocos p{
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    color: rgb(255, 255, 255);
+}
+body.tema .blocos h3{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    border-left: 10px solid #6b6b6b;
+    padding-left: 1.5rem;
+    color: #000000;
+}
+body.tema .blocos p{
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    color: rgb(0, 0, 0);
+}
+header nav a#home{
+    color: rgb(0, 255, 8);
+}
+body.tema header nav a#home{
+    color: rgb(255, 255, 255);
+}
+#habilidades .tecnologias a{
+    font-size: 10rem;
+    margin: 1rem;
+    transition: all .3s ease;
+    cursor: pointer;
+    color: rgb(255, 251, 251);
+}
+#habilidades .tecnologias a:hover{
+    transform: scale(1.2);
+}
+body.tema #habilidades .tecnologias a:hover{
+    transform: scale(1.2);
+}
+body.tema #habilidades .tecnologias a{
+    color: rgb(0, 0, 0);
+}
+@media(max-width: 900px){
+    #habilidades .tecnologias a{
+        font-size: 8rem;
+        margin: .5rem;
+    }}
+.tecnologias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 500px;
+  margin: auto;
+}
+.blocos li{
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    color: rgb(255, 255, 255);
+}
+body.tema .blocos li{
+    position: center;
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    color: rgb(0, 0, 0);
+}
+#servicos .projetos{
+  columns: 2;
+  column-gap: 40px;
+  gap: 0.6rem;
+}
+#servicos .projetos li::marker{
+  color: rgb(0, 255, 8);
+}
+body.tema #servicos .projetos li::marker{
+  color: rgb(172, 172, 172);
+}
+#formacao h4{
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: rgb(0, 255, 8);
+    border-left: 5px solid rgb(0, 255, 8);
+    padding-left: 1.5rem;
+}
+body.tema #formacao h4{
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: rgb(79, 79, 79);
+    border-left: 5px solid rgb(91, 91, 91);
+    padding-left: 1.5rem;
+}
+.imagens{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagens img{
+    width: 300px;
+    border: 3px solid rgb(0, 255, 8);
+    box-shadow: 0 0 15px rgb(0, 255, 8);
+    border-radius: 2rem;
+}
+body.tema .imagens img{
+    width: 300px;
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+    border-radius: 2rem;
+} 
+@media(max-width: 900px){
+    #servicos .projetos{
+        columns: 1;
+        column-gap: 20px;
+        gap: 0.6rem;
+    }
+    .imagens img{
+        width: 20rem;
+
+    }
+    body.tema .imagens img{
+        width: 20rem;
+    }
+}
+@media(max-width: 600px){
+    .imagens img{
+        width: 10rem;
+    }
+    body.tema .imagens img{
+        width: 10rem;
+    }
+}
