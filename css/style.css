@@ -501,4 +501,85 @@ body.tema .imagens img{
     body.tema .imagens img{
         width: 10rem;
     }
+
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 600px;
+    margin: auto;
+    padding: 2rem;
+    border: 3px solid rgb(0, 255, 8);
+    box-shadow: 0 0 15px rgb(0, 255, 8);
+    border-radius: 2rem;
+    font-size: 2rem;}
+.forms input, .forms textarea{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: 2px solid rgb(0, 255, 8);
+    border-radius: 0.5rem;
+    background-color: transparent;
+    color: white;}
+.forms button{
+    width: 30%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    background-color: rgb(0, 255, 8);
+    box-shadow: 0 0 0.5rem rgb(0, 255, 8);
+    color: black;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all .3s ease;}
+.forms button:hover{
+    background-color: black;
+    color: rgb(0, 255, 8);
+    border: 1px solid rgb(0, 255, 8);
+    box-shadow: 0 0 0.5rem rgb(0, 255, 8);
+}
+.ok{
+    color: rgb(0, 255, 8);
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem 0;
+    text-shadow: 0 0 0.4rem rgb(0, 255, 8);}
+body.tema .forms{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 600px;
+    margin: auto;
+    padding: 2rem;
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+    border-radius: 2rem;
+    font-size: 2rem;}
+body.tema .forms input, body.tema .forms textarea{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 0.5rem;
+    background-color: transparent;
+    color: black;}
+body.tema .forms button{
+    width: 30%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 0.5rem rgb(0, 0, 0);
+    font-weight: 600;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all .3s ease;}
+body.tema .forms button:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);}
+body.tema .ok{
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 0.5rem #434343;
 }
