@@ -522,7 +522,7 @@ body.tema .imagens img{
     border-radius: 0.5rem;
     background-color: transparent;
     color: white;}
-.forms button{
+.forms #enviar{
     width: 30%;
     padding: 1rem;
     font-size: 1.6rem;
@@ -533,7 +533,7 @@ body.tema .imagens img{
     border-radius: 0.5rem;
     cursor: pointer;
     transition: all .3s ease;}
-.forms button:hover{
+.forms #enviar:hover{
     background-color: black;
     color: rgb(0, 255, 8);
     border: 1px solid rgb(0, 255, 8);
@@ -564,7 +564,7 @@ body.tema .forms input, body.tema .forms textarea{
     border-radius: 0.5rem;
     background-color: transparent;
     color: black;}
-body.tema .forms button{
+body.tema .forms #enviar{
     width: 30%;
     padding: 1rem;
     font-size: 1.6rem;
@@ -575,7 +575,7 @@ body.tema .forms button{
     border-radius: 0.5rem;
     cursor: pointer;
     transition: all .3s ease;}
-body.tema .forms button:hover{
+body.tema .forms #enviar:hover{
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     border: 1px solid rgb(0, 0, 0);}
@@ -583,3 +583,4 @@ body.tema .ok{
     color: rgb(0, 0, 0);
     text-shadow: 0 0 0.5rem #434343;
 }
+
